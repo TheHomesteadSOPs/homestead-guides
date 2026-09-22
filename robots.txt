@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://thehomesteadsops.github.io/homestead-guides/sitemap.xml
