@@ -285,3 +285,36 @@ footer.site a { color: var(--sage-dk); }
   .hero-title { font-size: 1.7rem; }
   .hero-sub { font-size: 0.95rem; }
 }
+
+.signup-box {
+  background: var(--cream2);
+  border: 1px solid var(--line);
+  border-left: 5px solid var(--terracotta);
+  border-radius: 6px;
+  padding: 20px 22px;
+  margin: 2em 0;
+}
+.signup-box h3 { margin: 0 0 6px; font-family: 'Playfair Display', serif; color: var(--brown); }
+.signup-box p { margin: 0 0 12px; }
+.signup-box form { display: flex; gap: 10px; flex-wrap: wrap; }
+.signup-box input[type=email] {
+  flex: 1 1 240px;
+  padding: 10px 12px;
+  border: 1px solid var(--line);
+  border-radius: 4px;
+  font: inherit;
+}
+a.btn, button.btn {
+  display: inline-block;
+  background: var(--terracotta);
+  color: white;
+  text-decoration: none;
+  font: inherit;
+  font-weight: 600;
+  padding: 10px 18px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+a.btn:hover, button.btn:hover { background: var(--terracotta-dk); color: white; }
+.signup-box .signup-fine { font-size: 0.85rem; color: var(--sage-dk); margin: 12px 0 0; }
