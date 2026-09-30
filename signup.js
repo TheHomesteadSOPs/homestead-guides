@@ -1,17 +1,31 @@
 /* Homestead Guides - email signup block.
-   Nothing shows until ONE of these is filled in:
-     formAction : a plain HTML form POST endpoint from your email service
-     signupUrl  : the email service's hosted signup page (a button links there)
+   Modes (first one filled in wins):
+     mlAccount + mlForm : MailerLite embedded form (current)
+     formAction         : a plain HTML form POST endpoint
+     signupUrl          : hosted signup page (a button links there)
 */
 (function () {
   var CONFIG = {
+    mlAccount: "2672943",
+    mlForm: "2c9hBw",
     formAction: "",
     signupUrl: "",
     emailField: "email",
     heading: "Get the free Homestead Starter Pack",
-    text: "Four printable pages: a daily chore checklist, weekly planner, seasonal task prompts, and an emergency contacts card. Free when you join our email list."
+    text: "Five printable pages: a daily chore checklist, weekly planner, seasonal task prompts, and a shut-offs and emergency contacts card. Free when you join our email list."
   };
-  if (!CONFIG.formAction && !CONFIG.signupUrl) return;
+  var useML = CONFIG.mlAccount && CONFIG.mlForm;
+  if (!useML && !CONFIG.formAction && !CONFIG.signupUrl) return;
+
+  function loadML() {
+    if (window.ml) return;
+    (function (w, d, e, u, f, l, n) {
+      w[f] = w[f] || function () { (w[f].q = w[f].q || []).push(arguments); };
+      l = d.createElement(e); l.async = 1; l.src = u;
+      n = d.getElementsByTagName(e)[0]; n.parentNode.insertBefore(l, n);
+    })(window, document, "script", "https://assets.mailerlite.com/js/universal.js", "ml");
+    window.ml("account", CONFIG.mlAccount);
+  }
 
   function build() {
     var box = document.createElement("div");
@@ -22,7 +36,12 @@
     p.textContent = CONFIG.text;
     box.appendChild(h);
     box.appendChild(p);
-    if (CONFIG.formAction) {
+    if (useML) {
+      var d = document.createElement("div");
+      d.className = "ml-embedded";
+      d.setAttribute("data-form", CONFIG.mlForm);
+      box.appendChild(d);
+    } else if (CONFIG.formAction) {
       var f = document.createElement("form");
       f.method = "post";
       f.action = CONFIG.formAction;
@@ -58,6 +77,7 @@
     if (slot) slot.appendChild(build());
     var inline = document.getElementById("signup-inline");
     if (inline) inline.appendChild(build());
+    if (useML && (slot || inline)) loadML();
   }
   if (document.readyState === "loading") document.addEventListener("DOMContentLoaded", mount);
   else mount();
