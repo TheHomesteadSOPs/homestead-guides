@@ -5,8 +5,22 @@
     <link>https://thehomesteadsops.github.io/homestead-guides/</link>
     <description>Free, research-backed homesteading how-tos for backyard homesteaders, sourced from university extension research.</description>
     <language>en-us</language>
-    <lastBuildDate>Mon, 05 Oct 2026 18:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 06 Oct 2026 16:00:00 +0000</lastBuildDate>
     <atom:link href="https://thehomesteadsops.github.io/homestead-guides/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Composting Toilets for Off-Grid Living: A Beginner's Guide</title>
+      <link>https://thehomesteadsops.github.io/homestead-guides/articles/composting-toilet-off-grid-sanitation-beginners-guide.html</link>
+      <guid isPermaLink="true">https://thehomesteadsops.github.io/homestead-guides/articles/composting-toilet-off-grid-sanitation-beginners-guide.html</guid>
+      <pubDate>Mon, 05 Oct 2026 09:00:00 +0000</pubDate>
+      <description>How a composting toilet actually works, the carbon and moisture balance that keeps it from failing, why most home units can't fully sterilize waste, and the legal checks to make before you install one — from Washington State DOH, West Virginia University, and the EPA.</description>
+    </item>
+    <item>
+      <title>Building a Backyard Chicken Coop: A Beginner's Guide to Space, Nest Boxes &amp; Predator-Proofing</title>
+      <link>https://thehomesteadsops.github.io/homestead-guides/articles/building-a-backyard-chicken-coop-beginners-guide.html</link>
+      <guid isPermaLink="true">https://thehomesteadsops.github.io/homestead-guides/articles/building-a-backyard-chicken-coop-beginners-guide.html</guid>
+      <pubDate>Mon, 05 Oct 2026 09:00:00 +0000</pubDate>
+      <description>Real square-footage numbers for coop and run space, nest box and roost sizing, and the predator-proofing details (hardware cloth, buried wire aprons) that actually keep a flock safe — from Penn State and Oregon State Extension.</description>
+    </item>
     <item>
       <title>Building Your Own Beehive: A Beginner's Guide to Langstroth Hive Construction</title>
       <link>https://thehomesteadsops.github.io/homestead-guides/articles/building-a-backyard-beehive-beginners-guide.html</link>
