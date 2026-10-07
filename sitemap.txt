@@ -8,6 +8,7 @@ https://thehomesteadsops.github.io/homestead-guides/articles/beekeeping-beginner
 https://thehomesteadsops.github.io/homestead-guides/articles/building-a-backyard-beehive-beginners-guide.html
 https://thehomesteadsops.github.io/homestead-guides/articles/building-a-backyard-chicken-coop-beginners-guide.html
 https://thehomesteadsops.github.io/homestead-guides/articles/building-a-chicken-tractor-beginners-guide.html
+https://thehomesteadsops.github.io/homestead-guides/articles/building-a-wood-fired-cob-oven-beginners-guide.html
 https://thehomesteadsops.github.io/homestead-guides/articles/companion-planting-vegetable-garden-beginners-guide.html
 https://thehomesteadsops.github.io/homestead-guides/articles/composting-toilet-off-grid-sanitation-beginners-guide.html
 https://thehomesteadsops.github.io/homestead-guides/articles/family-milk-cow-beginners-guide.html
@@ -25,4 +26,5 @@ https://thehomesteadsops.github.io/homestead-guides/articles/root-cellar-storage
 https://thehomesteadsops.github.io/homestead-guides/articles/season-extension-hoop-house-cold-frame-beginners-guide.html
 https://thehomesteadsops.github.io/homestead-guides/articles/smoking-and-curing-meat-beginners-guide.html
 https://thehomesteadsops.github.io/homestead-guides/articles/starting-an-herb-garden-beginners-guide.html
+https://thehomesteadsops.github.io/homestead-guides/articles/winterizing-the-homestead-checklist-beginners-guide.html
 https://thehomesteadsops.github.io/homestead-guides/privacy.html
