@@ -10,8 +10,10 @@ https://thehomesteadsops.github.io/homestead-guides/articles/beekeeping-beginner
 https://thehomesteadsops.github.io/homestead-guides/articles/building-a-backyard-beehive-beginners-guide.html
 https://thehomesteadsops.github.io/homestead-guides/articles/building-a-backyard-chicken-coop-beginners-guide.html
 https://thehomesteadsops.github.io/homestead-guides/articles/building-a-chicken-tractor-beginners-guide.html
+https://thehomesteadsops.github.io/homestead-guides/articles/building-a-hunting-blind-beginners-guide.html
 https://thehomesteadsops.github.io/homestead-guides/articles/building-a-wood-fired-cob-oven-beginners-guide.html
 https://thehomesteadsops.github.io/homestead-guides/articles/canning-tomatoes-salsa-sauce-safely-beginners-guide.html
+https://thehomesteadsops.github.io/homestead-guides/articles/canning-vs-freezing-vs-dehydrating-beginners-guide.html
 https://thehomesteadsops.github.io/homestead-guides/articles/companion-planting-vegetable-garden-beginners-guide.html
 https://thehomesteadsops.github.io/homestead-guides/articles/composting-toilet-off-grid-sanitation-beginners-guide.html
 https://thehomesteadsops.github.io/homestead-guides/articles/family-emergency-binder-beginners-guide.html
@@ -27,7 +29,9 @@ https://thehomesteadsops.github.io/homestead-guides/articles/growing-zucchini-su
 https://thehomesteadsops.github.io/homestead-guides/articles/home-canning-for-beginners-water-bath-pressure-canning-guide.html
 https://thehomesteadsops.github.io/homestead-guides/articles/home-food-dehydrating-beginners-guide.html
 https://thehomesteadsops.github.io/homestead-guides/articles/jam-and-pickle-ratios-beginners-guide.html
+https://thehomesteadsops.github.io/homestead-guides/articles/keeping-chickens-laying-through-winter-beginners-guide.html
 https://thehomesteadsops.github.io/homestead-guides/articles/pantry-canning-jar-labels-beginners-guide.html
+https://thehomesteadsops.github.io/homestead-guides/articles/putting-the-garden-to-bed-for-winter-beginners-guide.html
 https://thehomesteadsops.github.io/homestead-guides/articles/rainwater-harvesting-garden-beginners-guide.html
 https://thehomesteadsops.github.io/homestead-guides/articles/raising-backyard-dairy-goats-beginners-guide.html
 https://thehomesteadsops.github.io/homestead-guides/articles/raising-backyard-meat-rabbits-beginners-guide.html
