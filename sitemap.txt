@@ -11,11 +11,15 @@ https://thehomesteadsops.github.io/homestead-guides/articles/building-a-backyard
 https://thehomesteadsops.github.io/homestead-guides/articles/building-a-backyard-chicken-coop-beginners-guide.html
 https://thehomesteadsops.github.io/homestead-guides/articles/building-a-chicken-tractor-beginners-guide.html
 https://thehomesteadsops.github.io/homestead-guides/articles/building-a-hunting-blind-beginners-guide.html
+https://thehomesteadsops.github.io/homestead-guides/articles/building-a-shed-or-cabin-alone-beginners-guide.html
 https://thehomesteadsops.github.io/homestead-guides/articles/building-a-wood-fired-cob-oven-beginners-guide.html
 https://thehomesteadsops.github.io/homestead-guides/articles/canning-tomatoes-salsa-sauce-safely-beginners-guide.html
 https://thehomesteadsops.github.io/homestead-guides/articles/canning-vs-freezing-vs-dehydrating-beginners-guide.html
+https://thehomesteadsops.github.io/homestead-guides/articles/choosing-a-cabin-or-shed-building-site-beginners-guide.html
 https://thehomesteadsops.github.io/homestead-guides/articles/companion-planting-vegetable-garden-beginners-guide.html
 https://thehomesteadsops.github.io/homestead-guides/articles/composting-toilet-off-grid-sanitation-beginners-guide.html
+https://thehomesteadsops.github.io/homestead-guides/articles/cooking-in-a-wood-fired-cob-oven-pizza-bread-roasts-beginners-guide.html
+https://thehomesteadsops.github.io/homestead-guides/articles/curing-a-new-cob-oven-first-fires-cracks-beginners-guide.html
 https://thehomesteadsops.github.io/homestead-guides/articles/family-emergency-binder-beginners-guide.html
 https://thehomesteadsops.github.io/homestead-guides/articles/family-milk-cow-beginners-guide.html
 https://thehomesteadsops.github.io/homestead-guides/articles/fermenting-vegetables-at-home-beginners-guide.html
@@ -45,5 +49,6 @@ https://thehomesteadsops.github.io/homestead-guides/articles/season-extension-ho
 https://thehomesteadsops.github.io/homestead-guides/articles/siting-a-backyard-cabin-near-a-tree-beginners-guide.html
 https://thehomesteadsops.github.io/homestead-guides/articles/smoking-and-curing-meat-beginners-guide.html
 https://thehomesteadsops.github.io/homestead-guides/articles/starting-an-herb-garden-beginners-guide.html
+https://thehomesteadsops.github.io/homestead-guides/articles/testing-clay-for-a-cob-oven-jar-ribbon-test-beginners-guide.html
 https://thehomesteadsops.github.io/homestead-guides/articles/winterizing-the-homestead-checklist-beginners-guide.html
 https://thehomesteadsops.github.io/homestead-guides/privacy.html
