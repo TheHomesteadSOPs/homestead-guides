@@ -35,6 +35,7 @@ https://thehomesteadsops.github.io/homestead-guides/articles/home-food-dehydrati
 https://thehomesteadsops.github.io/homestead-guides/articles/jam-and-pickle-ratios-beginners-guide.html
 https://thehomesteadsops.github.io/homestead-guides/articles/keeping-chickens-laying-through-winter-beginners-guide.html
 https://thehomesteadsops.github.io/homestead-guides/articles/pantry-canning-jar-labels-beginners-guide.html
+https://thehomesteadsops.github.io/homestead-guides/articles/preserving-fresh-eggs-for-winter-beginners-guide.html
 https://thehomesteadsops.github.io/homestead-guides/articles/putting-the-garden-to-bed-for-winter-beginners-guide.html
 https://thehomesteadsops.github.io/homestead-guides/articles/rainwater-harvesting-garden-beginners-guide.html
 https://thehomesteadsops.github.io/homestead-guides/articles/raising-backyard-dairy-goats-beginners-guide.html
@@ -45,6 +46,7 @@ https://thehomesteadsops.github.io/homestead-guides/articles/raising-meat-chicke
 https://thehomesteadsops.github.io/homestead-guides/articles/raising-pigs-for-meat-beginners-guide.html
 https://thehomesteadsops.github.io/homestead-guides/articles/raising-sheep-beginners-guide.html
 https://thehomesteadsops.github.io/homestead-guides/articles/root-cellar-storage-for-beginners-guide.html
+https://thehomesteadsops.github.io/homestead-guides/articles/safe-internal-temperatures-meat-poultry-beginners-guide.html
 https://thehomesteadsops.github.io/homestead-guides/articles/season-extension-hoop-house-cold-frame-beginners-guide.html
 https://thehomesteadsops.github.io/homestead-guides/articles/siting-a-backyard-cabin-near-a-tree-beginners-guide.html
 https://thehomesteadsops.github.io/homestead-guides/articles/smoking-and-curing-meat-beginners-guide.html
