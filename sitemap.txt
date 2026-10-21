@@ -30,6 +30,7 @@ https://thehomesteadsops.github.io/homestead-guides/articles/growing-mulberries-
 https://thehomesteadsops.github.io/homestead-guides/articles/growing-peppers-backyard-garden-beginners-guide.html
 https://thehomesteadsops.github.io/homestead-guides/articles/growing-tomatoes-backyard-garden-beginners-guide.html
 https://thehomesteadsops.github.io/homestead-guides/articles/growing-zucchini-summer-squash-backyard-garden-beginners-guide.html
+https://thehomesteadsops.github.io/homestead-guides/articles/hardening-off-seedlings-beginners-guide.html
 https://thehomesteadsops.github.io/homestead-guides/articles/home-canning-for-beginners-water-bath-pressure-canning-guide.html
 https://thehomesteadsops.github.io/homestead-guides/articles/home-food-dehydrating-beginners-guide.html
 https://thehomesteadsops.github.io/homestead-guides/articles/jam-and-pickle-ratios-beginners-guide.html
@@ -48,6 +49,7 @@ https://thehomesteadsops.github.io/homestead-guides/articles/raising-sheep-begin
 https://thehomesteadsops.github.io/homestead-guides/articles/root-cellar-storage-for-beginners-guide.html
 https://thehomesteadsops.github.io/homestead-guides/articles/safe-internal-temperatures-meat-poultry-beginners-guide.html
 https://thehomesteadsops.github.io/homestead-guides/articles/season-extension-hoop-house-cold-frame-beginners-guide.html
+https://thehomesteadsops.github.io/homestead-guides/articles/seed-saving-for-beginners-guide.html
 https://thehomesteadsops.github.io/homestead-guides/articles/siting-a-backyard-cabin-near-a-tree-beginners-guide.html
 https://thehomesteadsops.github.io/homestead-guides/articles/smoking-and-curing-meat-beginners-guide.html
 https://thehomesteadsops.github.io/homestead-guides/articles/starting-an-herb-garden-beginners-guide.html
