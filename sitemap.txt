@@ -13,6 +13,7 @@ https://thehomesteadsops.github.io/homestead-guides/articles/building-a-chicken-
 https://thehomesteadsops.github.io/homestead-guides/articles/building-a-hunting-blind-beginners-guide.html
 https://thehomesteadsops.github.io/homestead-guides/articles/building-a-shed-or-cabin-alone-beginners-guide.html
 https://thehomesteadsops.github.io/homestead-guides/articles/building-a-wood-fired-cob-oven-beginners-guide.html
+https://thehomesteadsops.github.io/homestead-guides/articles/canning-meat-poultry-broth-safely-beginners-guide.html
 https://thehomesteadsops.github.io/homestead-guides/articles/canning-tomatoes-salsa-sauce-safely-beginners-guide.html
 https://thehomesteadsops.github.io/homestead-guides/articles/canning-vs-freezing-vs-dehydrating-beginners-guide.html
 https://thehomesteadsops.github.io/homestead-guides/articles/choosing-a-cabin-or-shed-building-site-beginners-guide.html
@@ -23,6 +24,7 @@ https://thehomesteadsops.github.io/homestead-guides/articles/curing-a-new-cob-ov
 https://thehomesteadsops.github.io/homestead-guides/articles/family-emergency-binder-beginners-guide.html
 https://thehomesteadsops.github.io/homestead-guides/articles/family-milk-cow-beginners-guide.html
 https://thehomesteadsops.github.io/homestead-guides/articles/fermenting-vegetables-at-home-beginners-guide.html
+https://thehomesteadsops.github.io/homestead-guides/articles/firewood-wood-heat-for-the-homestead-beginners-guide.html
 https://thehomesteadsops.github.io/homestead-guides/articles/frost-dates-succession-planting-beginners-guide.html
 https://thehomesteadsops.github.io/homestead-guides/articles/goat-sheep-loafing-shed-beginners-guide.html
 https://thehomesteadsops.github.io/homestead-guides/articles/growing-cucumbers-backyard-garden-beginners-guide.html
