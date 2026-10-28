@@ -67,7 +67,7 @@
     }
     var s = document.createElement("p");
     s.className = "signup-fine";
-    s.innerHTML = 'We only email about new guides and printables. Unsubscribe any time. <a href="/homestead-guides/privacy.html">Privacy</a>';
+    s.innerHTML = 'We only email about new guides and printables. Unsubscribe any time. <a href="/privacy.html">Privacy</a>';
     box.appendChild(s);
     return box;
   }

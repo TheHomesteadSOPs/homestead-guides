@@ -1,5 +1,5 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://thehomesteadsops.github.io/homestead-guides/sitemap.xml
-Sitemap: https://thehomesteadsops.github.io/homestead-guides/sitemap.txt
+Sitemap: https://thehomesteadsops.com/sitemap.xml
+Sitemap: https://thehomesteadsops.com/sitemap.txt
