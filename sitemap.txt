@@ -30,6 +30,7 @@ https://thehomesteadsops.github.io/homestead-guides/articles/frost-dates-success
 https://thehomesteadsops.github.io/homestead-guides/articles/goat-sheep-loafing-shed-beginners-guide.html
 https://thehomesteadsops.github.io/homestead-guides/articles/growing-and-storing-potatoes-beginners-guide.html
 https://thehomesteadsops.github.io/homestead-guides/articles/growing-cucumbers-backyard-garden-beginners-guide.html
+https://thehomesteadsops.github.io/homestead-guides/articles/growing-garlic-and-onions-beginners-guide.html
 https://thehomesteadsops.github.io/homestead-guides/articles/growing-mulberries-backyard-garden-beginners-guide.html
 https://thehomesteadsops.github.io/homestead-guides/articles/growing-peppers-backyard-garden-beginners-guide.html
 https://thehomesteadsops.github.io/homestead-guides/articles/growing-tomatoes-backyard-garden-beginners-guide.html
@@ -37,6 +38,7 @@ https://thehomesteadsops.github.io/homestead-guides/articles/growing-zucchini-su
 https://thehomesteadsops.github.io/homestead-guides/articles/hardening-off-seedlings-beginners-guide.html
 https://thehomesteadsops.github.io/homestead-guides/articles/harvesting-extracting-honey-beginners-guide.html
 https://thehomesteadsops.github.io/homestead-guides/articles/heating-a-hunting-cabin-safely-beginners-guide.html
+https://thehomesteadsops.github.io/homestead-guides/articles/herb-and-spice-substitution-beginners-guide.html
 https://thehomesteadsops.github.io/homestead-guides/articles/home-canning-for-beginners-water-bath-pressure-canning-guide.html
 https://thehomesteadsops.github.io/homestead-guides/articles/home-dairy-basics-cheese-yogurt-butter-beginners-guide.html
 https://thehomesteadsops.github.io/homestead-guides/articles/home-food-dehydrating-beginners-guide.html
