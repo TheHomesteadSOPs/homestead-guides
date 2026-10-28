@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>How Many Animals Per Acre? Goat, Sheep, Cow &amp; Horse Calculator</title>
+<meta name="description" content="Estimate how many goats, sheep, cows or horses your pasture can feed, acres per animal, and how much hay you'll need for winter.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Source+Sans+3:wght@400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/styles.css">
+<link rel="alternate" type="application/rss+xml" title="Homestead Guides" href="/feed.xml">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Homestead Guides">
+<meta property="og:title" content="How Many Animals Per Acre? Goat, Sheep, Cow &amp; Horse Calculator">
+<meta property="og:description" content="Estimate how many goats, sheep, cows or horses your pasture can feed, acres per animal, and how much hay you'll need for winter.">
+<meta property="og:url" content="https://thehomesteadsops.com/tools/livestock-per-acre-calculator.html">
+<meta property="og:image" content="https://thehomesteadsops.com/images/heroes/raising-backyard-dairy-goats-beginners-guide.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="canonical" href="https://thehomesteadsops.com/tools/livestock-per-acre-calculator.html">
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16.png">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://thehomesteadsops.com/"}, {"@type": "ListItem", "position": 2, "name": "Free Tools", "item": "https://thehomesteadsops.com/tools/"}, {"@type": "ListItem", "position": 3, "name": "How Many Animals Per Acre?", "item": "https://thehomesteadsops.com/tools/livestock-per-acre-calculator.html"}]}, {"@type": "WebApplication", "name": "How Many Animals Per Acre?", "url": "https://thehomesteadsops.com/tools/livestock-per-acre-calculator.html", "description": "Estimate how many goats, sheep, cows or horses your pasture can feed, acres per animal, and how much hay you'll need for winter.", "applicationCategory": "UtilitiesApplication", "operatingSystem": "Any", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "USD"}}, {"@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "How many goats can I keep per acre?", "acceptedAnswer": {"@type": "Answer", "text": "On average unfertilized pasture (about 2,000 lb of forage a year) with half of it grazed over a six-month season, an acre feeds only one or two goats; good fertilized pasture feeds three or four. Marion County, Oregon uses 3-5 goats per acre of dry pasture as a guideline. Goats also browse brush, so wooded land can carry more than grass alone suggests."}}, {"@type": "Question", "name": "How many acres does a horse need?", "acceptedAnswer": {"@type": "Answer", "text": "eXtension's horse specialists suggest 1.5 to 2 acres of intensively managed pasture per horse in the eastern US and 2 to 10 acres elsewhere, rising to 30 acres or more on dry, unirrigated land."}}, {"@type": "Question", "name": "What does 'take half, leave half' mean?", "acceptedAnswer": {"@type": "Answer", "text": "It is a grazing rule of thumb: let animals eat about half of the forage and leave the rest so the plants can regrow, protect the soil and survive dry spells. It sets the utilization rate at 50%."}}]}]}</script>
+</head>
+<body>
+<header class="site">
+  <div class="wrap header-inner">
+    <img src="/images/farmer-avatar.png" alt="" class="brand-avatar">
+    <div class="brand-text">
+      <a class="brand" href="/">Homestead Guides</a>
+      <div class="tagline">Free, research-backed how-tos for real backyard homesteaders</div>
+    </div>
+  </div>
+</header>
+<nav class="topnav" aria-label="Topics"><div class="wrap topnav-inner"><a href="/topics/chickens-and-poultry.html">Chickens</a><a href="/topics/goats-sheep-pigs-and-cows.html">Livestock</a><a href="/topics/beekeeping.html">Bees</a><a href="/topics/vegetable-gardening-and-orchard.html">Garden</a><a href="/topics/food-preservation-and-kitchen.html">Preserving</a><a href="/topics/building-and-off-grid.html">Building</a><a href="/tools/" class="on tools">Free Tools</a></div></nav>
+<main class="wrap">
+  <nav class="crumbs" aria-label="Breadcrumb"><a href="/">Home</a> <span class="sep">&rsaquo;</span> <a href="/tools/">Free Tools</a> <span class="sep">&rsaquo;</span> <span>How Many Animals Per Acre?</span></nav>
+  <h1>How Many Animals Per Acre?</h1>
+  <p class="dek">A forage-budget calculator for goats, sheep, beef cows and horses, with the extension numbers behind it.</p>
+
+  <form class="calc" onsubmit="return false">
+    <div class="row">
+      <label>Animal
+        <select id="animal"><option value="goat">Goats</option><option value="sheep">Sheep</option><option value="cow">Beef cows (about 1,000 lb)</option><option value="horse">Horses</option></select></label>
+      <label>Pasture size (acres)<input id="acres" type="number" min="0" step="0.1" value="2"></label>
+      <label>Your pasture
+        <select id="pasture">
+          <option value="750">Dry, thin or low-rainfall pasture (about 750 lb/acre a year)</option>
+          <option value="2000" selected>Average pasture, no fertilizer, decent rain (about 2,000 lb)</option>
+          <option value="5000">Good fertilized pasture (about 5,000 lb)</option>
+          <option value="7000">Excellent: irrigated or intensively managed (about 7,000 lb)</option>
+          <option value="custom">I know my yield (enter it)</option>
+        </select></label>
+      <label id="f-custom" style="display:none">Forage yield (lb dry matter per acre per year)<input id="custom" type="number" min="0" value="3000"></label>
+      <label>How much of it they eat <span class="hint">(utilization)</span>
+        <select id="util"><option value="35">35%: native or fragile pasture</option><option value="50" selected>50%: "take half, leave half"</option><option value="65">65%: rotational grazing</option></select></label>
+      <label>Months on pasture each year<input id="months" type="number" min="1" max="12" value="6"></label>
+    </div>
+  </form>
+  <div id="out" aria-live="polite"></div>
+
+  <h2>How the math works</h2>
+  <p>Ranchers size herds with a forage budget. Start with how much dry forage your pasture grows in a year, keep only the share animals can eat without damaging the stand (about half is the classic rule), then divide by what each animal eats over the grazing season.</p>
+  <p><b>Animals = acres &times; yield per acre &times; utilization &divide; (daily intake &times; grazing days)</b></p>
+  <ul>
+    <li><b>Daily dry-matter intake</b> (Oklahoma State Extension): beef cow 26 lb, horse 32 lb, sheep 5 lb, goat 4 lb.</li>
+    <li><b>Yields</b> vary hugely. Oklahoma State measures about 1 ton of dry matter per acre from unfertilized grass pasture, rising to 2.4-3.9 tons with 100-200 lb of nitrogen. Alberta's guide puts good-condition tame pasture in a 14-18 inch rainfall zone at about 740 lb per acre.</li>
+    <li><b>Hay</b> for the months off pasture is the same daily intake, converted to baled hay at about 88% dry matter.</li>
+  </ul>
+  <h2>Quick rules of thumb to check against</h2>
+  <table><thead><tr><th>Animal</th><th>Head per acre on dry pasture (Marion County, Oregon)</th></tr></thead><tbody>
+  <tr><td>Horses</td><td>0.5 (2 acres each)</td></tr><tr><td>Cattle</td><td>0.5-1</td></tr><tr><td>Sheep</td><td>2-4</td></tr><tr><td>Goats</td><td>3-5</td></tr></tbody></table>
+  <p>For horses, eXtension's horse experts suggest 1.5 to 2 acres of intensively managed pasture per horse in the East, 2 to 10 acres in the South, Midwest and West, and up to 30-38 acres on dry, unirrigated land.</p>
+  <p class="callout"><strong>This is a planning estimate.</strong> Real carrying capacity depends on your soil, rainfall, grass species and grazing management. Start below the number, watch your pasture for a season, and ask your local extension office about typical yields in your county.</p>
+  <div class="cta-box">
+    <h3>Keep track of the herd</h3>
+    <p>Our printable record books cover breeding, health, feed and pasture rotation: <a href="https://www.etsy.com/listing/4579979556/" target="_blank" rel="noopener">Goat Herd Record Book</a>, <a href="https://www.etsy.com/listing/4579983367/" target="_blank" rel="noopener">Sheep Flock Record Book</a> and <a href="https://www.etsy.com/listing/4582428822/" target="_blank" rel="noopener">Dairy Cow Record Book</a>. Need to fence it? See <a href="https://www.etsy.com/listing/4604263228/" target="_blank" rel="noopener">The Ultimate Livestock Fencing Guide</a>.</p>
+    <a class="btn" href="https://www.etsy.com/shop/TheHomesteadSOPs" target="_blank" rel="noopener">Browse the shop &rarr;</a>
+  </div>
+<script>
+const $ = id => document.getElementById(id);
+const INTAKE = {cow: 26, horse: 32, sheep: 5, goat: 4};
+const NAMES = {cow: ['beef cow', 'beef cows'], horse: ['horse', 'horses'], sheep: ['sheep', 'sheep'], goat: ['goat', 'goats']};
+function calc() {
+  const acres = parseFloat($('acres').value) || 0, sel = $('pasture').value;
+  $('f-custom').style.display = sel === 'custom' ? '' : 'none';
+  const yld = sel === 'custom' ? (parseFloat($('custom').value) || 0) : parseFloat(sel);
+  const util = parseFloat($('util').value) / 100, months = parseFloat($('months').value) || 0, a = $('animal').value;
+  const days = months * 30.4, intake = INTAKE[a];
+  if (!(acres > 0 && yld > 0 && days > 0)) { $('out').innerHTML = '<p>Fill in the boxes above.</p>'; return; }
+  const usable = acres * yld * util, n = usable / (intake * days);
+  const perAnimal = n > 0 ? acres / n : 0, whole = Math.floor(n + 1e-9);
+  const hayDays = Math.max(0, 365 - days), hayLb = intake * hayDays / 0.88 * Math.max(whole, 1);
+  let html = '<div class="result"><p class="big">About ' + (n >= 10 ? Math.round(n) : n.toFixed(1)) + ' ' + NAMES[a][n >= 1.5 ? 1 : 0] + '</p>';
+  html += '<p>for ' + months + ' month' + (months == 1 ? '' : 's') + ' of grazing on ' + acres + ' acre' + (acres == 1 ? '' : 's') + ', or about <b>' + perAnimal.toFixed(perAnimal < 1 ? 2 : 1) + ' acres per ' + NAMES[a][0] + '</b>.</p>';
+  html += '<table><tbody><tr><td>Forage grown</td><td class="num">' + Math.round(acres * yld).toLocaleString('en-US') + ' lb</td></tr><tr><td>Usable at ' + Math.round(util * 100) + '% utilization</td><td class="num">' + Math.round(usable).toLocaleString('en-US') + ' lb</td></tr><tr><td>One ' + NAMES[a][0] + ' eats</td><td class="num">' + intake + ' lb a day</td></tr>';
+  if (hayDays > 0 && whole >= 1) html += '<tr><td>Hay for the other ' + Math.round(hayDays) + ' days (' + whole + ' ' + NAMES[a][whole > 1 ? 1 : 0] + ')</td><td class="num">about ' + (hayLb / 2000).toFixed(1) + ' tons (' + Math.ceil(hayLb / 50) + ' small 50 lb bales)</td></tr>';
+  html += '</tbody></table></div>';
+  $('out').innerHTML = html;
+}
+document.querySelectorAll('.calc input, .calc select').forEach(e => e.addEventListener('input', calc));
+calc();
+</script>
+  <h2>Common questions</h2>
+  <h3>How many goats can I keep per acre?</h3>
+  <p>On average unfertilized pasture (about 2,000 lb of forage a year) with half of it grazed over a six-month season, an acre feeds only one or two goats; good fertilized pasture feeds three or four. Marion County, Oregon uses 3-5 goats per acre of dry pasture as a guideline. Goats also browse brush, so wooded land can carry more than grass alone suggests.</p>
+  <h3>How many acres does a horse need?</h3>
+  <p>eXtension's horse specialists suggest 1.5 to 2 acres of intensively managed pasture per horse in the eastern US and 2 to 10 acres elsewhere, rising to 30 acres or more on dry, unirrigated land.</p>
+  <h3>What does 'take half, leave half' mean?</h3>
+  <p>It is a grazing rule of thumb: let animals eat about half of the forage and leave the rest so the plants can regrow, protect the soil and survive dry spells. It sets the utilization rate at 50%.</p>
+  <ul class="sources"><li><strong>Sources:</strong></li><li><a href="https://extension.okstate.edu/fact-sheets/forage-budgeting-guidelines" target="_blank" rel="noopener">Oklahoma State University Extension, Forage-Budgeting Guidelines</a></li><li><a href="https://wyoextension.org/publications/html/B1320/" target="_blank" rel="noopener">University of Wyoming Extension, What is an AUM? (B-1320)</a></li><li><a href="https://www.beefresearch.ca/blog/calculating-carrying-capacity/" target="_blank" rel="noopener">Beef Cattle Research Council, Calculating Carrying Capacity</a></li><li><a href="https://horses.extension.org/how-much-land-do-i-need-for-a-horse/" target="_blank" rel="noopener">eXtension Horses, How much land do I need for a horse?</a></li><li><a href="https://WWW.CO.MARION.OR.US/AO/Documents/FormsAndResources/CarryingCapacity.pdf" target="_blank" rel="noopener">Marion County (Oregon) Assessor, Carrying Capacity guidelines</a></li></ul>
+</main>
+<div id="signup-slot" class="wrap"></div>
+<footer class="site">
+  <div class="wrap">
+    <p class="foot-links"><a href="/">All guides</a> &middot; <a href="/tools/">Free tools</a> &middot; <a href="/free-printable.html">Free printable</a> &middot; <a href="https://www.etsy.com/shop/TheHomesteadSOPs" target="_blank" rel="noopener">Etsy shop</a> &middot; <a href="/privacy.html">Privacy</a></p>
+    <p>Homestead Guides is an independent resource. Reference data is drawn from university Cooperative Extension and other public sources, linked on each page. Always confirm details for your own climate and animals with your local extension office.</p>
+  </div>
+</footer>
+<script src="/signup.js" defer></script>
+</body>
+</html>

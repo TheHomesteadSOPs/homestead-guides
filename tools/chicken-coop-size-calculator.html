@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Chicken Coop Size Calculator: Space, Nest Boxes &amp; Roosts</title>
+<meta name="description" content="How big a chicken coop do you need? Enter your flock size to get coop square footage, nest boxes, roost length and run size from extension guidelines.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Source+Sans+3:wght@400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/styles.css">
+<link rel="alternate" type="application/rss+xml" title="Homestead Guides" href="/feed.xml">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Homestead Guides">
+<meta property="og:title" content="Chicken Coop Size Calculator: Space, Nest Boxes &amp; Roosts">
+<meta property="og:description" content="How big a chicken coop do you need? Enter your flock size to get coop square footage, nest boxes, roost length and run size from extension guidelines.">
+<meta property="og:url" content="https://thehomesteadsops.com/tools/chicken-coop-size-calculator.html">
+<meta property="og:image" content="https://thehomesteadsops.com/images/heroes/building-a-backyard-chicken-coop-beginners-guide.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="canonical" href="https://thehomesteadsops.com/tools/chicken-coop-size-calculator.html">
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16.png">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://thehomesteadsops.com/"}, {"@type": "ListItem", "position": 2, "name": "Free Tools", "item": "https://thehomesteadsops.com/tools/"}, {"@type": "ListItem", "position": 3, "name": "Chicken Coop Size Calculator", "item": "https://thehomesteadsops.com/tools/chicken-coop-size-calculator.html"}]}, {"@type": "WebApplication", "name": "Chicken Coop Size Calculator", "url": "https://thehomesteadsops.com/tools/chicken-coop-size-calculator.html", "description": "How big a chicken coop do you need? Enter your flock size to get coop square footage, nest boxes, roost length and run size from extension guidelines.", "applicationCategory": "UtilitiesApplication", "operatingSystem": "Any", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "USD"}}, {"@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "How big should a coop be for 6 chickens?", "acceptedAnswer": {"@type": "Answer", "text": "For six laying hens that also have a run, plan 9 to 18 sq ft of coop floor: Penn State's 1.5 sq ft per hen at the small end and Oregon State's 3 sq ft per bird at the roomy end. A 4 x 6 ft coop fits the roomier figure, with three nest boxes and 2.5-5 ft of roost."}}, {"@type": "Question", "name": "How many nest boxes do I need?", "acceptedAnswer": {"@type": "Answer", "text": "Two boxes for the first four hens, then one more for every four hens after that. Hens share boxes happily, so you don't need one per bird."}}, {"@type": "Question", "name": "How much roost space does a chicken need?", "acceptedAnswer": {"@type": "Answer", "text": "About 5-10 in of perch per standard bird and 4 in per bantam. Set perches 18-24 in off the floor for standard breeds, about 10 in apart, and no higher than about 4 ft."}}]}]}</script>
+</head>
+<body>
+<header class="site">
+  <div class="wrap header-inner">
+    <img src="/images/farmer-avatar.png" alt="" class="brand-avatar">
+    <div class="brand-text">
+      <a class="brand" href="/">Homestead Guides</a>
+      <div class="tagline">Free, research-backed how-tos for real backyard homesteaders</div>
+    </div>
+  </div>
+</header>
+<nav class="topnav" aria-label="Topics"><div class="wrap topnav-inner"><a href="/topics/chickens-and-poultry.html">Chickens</a><a href="/topics/goats-sheep-pigs-and-cows.html">Livestock</a><a href="/topics/beekeeping.html">Bees</a><a href="/topics/vegetable-gardening-and-orchard.html">Garden</a><a href="/topics/food-preservation-and-kitchen.html">Preserving</a><a href="/topics/building-and-off-grid.html">Building</a><a href="/tools/" class="on tools">Free Tools</a></div></nav>
+<main class="wrap">
+  <nav class="crumbs" aria-label="Breadcrumb"><a href="/">Home</a> <span class="sep">&rsaquo;</span> <a href="/tools/">Free Tools</a> <span class="sep">&rsaquo;</span> <span>Chicken Coop Size Calculator</span></nav>
+  <h1>Chicken Coop Size Calculator</h1>
+  <p class="dek">Enter your flock size to get coop floor space, nest boxes and roost length, using Penn State and Oregon State Extension figures.</p>
+
+  <form class="calc" onsubmit="return false">
+    <div class="row">
+      <label>How many birds?<input id="n" type="number" min="1" value="6"></label>
+      <label>What kind?
+        <select id="type"><option value="layer">Laying hens (light breeds)</option><option value="large">Large or heavy breeds</option><option value="bantam">Bantams</option></select></label>
+      <label>Outdoor space
+        <select id="access"><option value="run">They'll have a run or free-range time</option><option value="none">Coop only, no outdoor access</option></select></label>
+    </div>
+  </form>
+  <div id="out" aria-live="polite"></div>
+
+  <h2>Where these numbers come from</h2>
+  <ul>
+    <li><b>Coop floor:</b> Penn State Extension lists 1.5 sq ft per laying hen, 2 sq ft per large chicken and 1 sq ft per bantam inside the coop. Oregon State University Extension recommends a roomier 3 sq ft per bird when birds also have a run, and 8 to 10 sq ft per bird when the coop is their only space. The calculator shows the range between the two and sizes the coop to the roomier figure.</li>
+    <li><b>Nest boxes:</b> at least 12 x 12 x 12 in, two for the first four hens and one more for every four after that, at least 2 ft off the ground.</li>
+    <li><b>Roosts:</b> 5-10 in of perch per standard bird at 18-24 in off the floor, or 4 in per bantam at 12-18 in. Space multiple perches about 10 in apart and keep them under about 4 ft high.</li>
+    <li><b>Run:</b> extension guides don't give one number for runs. Our rule of thumb is to give run birds at least the 8-10 sq ft per bird that Oregon State sets for birds that never go outside, and more if you can.</li>
+  </ul>
+  <p>Read the full guide: <a href="/articles/building-a-backyard-chicken-coop-beginners-guide.html">Building a Backyard Chicken Coop: Space, Nest Boxes &amp; Predator-Proofing</a>.</p>
+  <div class="cta-box">
+    <h3>Build it from a plan</h3>
+    <p>The <a href="https://www.etsy.com/listing/4583369078/" target="_blank" rel="noopener">Homestead Chicken Coop Build Guide</a> walks through a predator-proof coop step by step, and the <a href="https://www.etsy.com/listing/4579962004/" target="_blank" rel="noopener">Chicken Flock Record Book</a> keeps egg counts, feed and health in one place.</p>
+    <a class="btn" href="https://www.etsy.com/listing/4583369078/" target="_blank" rel="noopener">See the coop build guide &rarr;</a>
+  </div>
+<script>
+const $ = id => document.getElementById(id);
+const SIZES = [[3,4],[4,4],[4,6],[4,8],[6,8],[8,8],[8,10],[8,12],[10,12],[10,16],[12,16],[12,20],[16,20],[16,24]];
+function fit(area) { for (const [a, b] of SIZES) if (a * b >= area) return a + ' x ' + b + ' ft'; return 'about ' + Math.ceil(area) + ' sq ft (several buildings or a barn)'; }
+function calc() {
+  const n = parseInt($('n').value) || 0, type = $('type').value, out = $('access').value;
+  if (n < 1) { $('out').innerHTML = '<p>Enter how many birds you plan to keep.</p>'; return; }
+  const ps = {large: 2, layer: 1.5, bantam: 1}[type];
+  let lo, hi, label;
+  if (out === 'run') { lo = ps * n; hi = Math.max(3 * (type === 'bantam' ? 2 / 3 : 1), ps) * n; label = 'Coop floor (birds also have a run)'; }
+  else { lo = 8 * n * (type === 'bantam' ? 0.6 : 1); hi = 10 * n * (type === 'bantam' ? 0.6 : 1); label = 'Coop floor (birds never go outside)'; }
+  const nests = n <= 4 ? 2 : 2 + Math.ceil((n - 4) / 4);
+  const r1 = type === 'bantam' ? 4 : 5, r2 = type === 'bantam' ? 4 : 10;
+  const rlo = n * r1 / 12, rhi = n * r2 / 12;
+  const rh = type === 'bantam' ? '12-18 in' : '18-24 in';
+  let html = '<div class="result"><p class="big">' + fit(hi) + ' coop</p><p>for ' + n + ' ' + (type === 'bantam' ? 'bantams' : 'hens') + ' (' + Math.round(lo) + '-' + Math.round(hi) + ' sq ft of floor).</p>';
+  html += '<table><tbody><tr><td>' + label + '</td><td class="num">' + Math.round(lo) + '-' + Math.round(hi) + ' sq ft</td></tr>';
+  html += '<tr><td>Nest boxes (12 x 12 x 12 in)</td><td class="num">' + nests + '</td></tr>';
+  html += '<tr><td>Roost length</td><td class="num">' + (rlo === rhi ? rlo.toFixed(1) : rlo.toFixed(1) + '-' + rhi.toFixed(1)) + ' ft</td></tr>';
+  html += '<tr><td>Roost height off the floor</td><td class="num">' + rh + '</td></tr>';
+  if (out === 'run') html += '<tr><td>Outdoor run (our rule of thumb)</td><td class="num">at least ' + Math.round(8 * n) + '-' + Math.round(10 * n) + ' sq ft</td></tr>';
+  html += '</tbody></table></div>';
+  $('out').innerHTML = html;
+}
+document.querySelectorAll('.calc input, .calc select').forEach(e => e.addEventListener('input', calc));
+calc();
+</script>
+  <h2>Common questions</h2>
+  <h3>How big should a coop be for 6 chickens?</h3>
+  <p>For six laying hens that also have a run, plan 9 to 18 sq ft of coop floor: Penn State's 1.5 sq ft per hen at the small end and Oregon State's 3 sq ft per bird at the roomy end. A 4 x 6 ft coop fits the roomier figure, with three nest boxes and 2.5-5 ft of roost.</p>
+  <h3>How many nest boxes do I need?</h3>
+  <p>Two boxes for the first four hens, then one more for every four hens after that. Hens share boxes happily, so you don't need one per bird.</p>
+  <h3>How much roost space does a chicken need?</h3>
+  <p>About 5-10 in of perch per standard bird and 4 in per bantam. Set perches 18-24 in off the floor for standard breeds, about 10 in apart, and no higher than about 4 ft.</p>
+  <ul class="sources"><li><strong>Sources:</strong></li><li><a href="https://extension.psu.edu/small-scale-poultry-housing" target="_blank" rel="noopener">Penn State Extension, Small Scale Poultry Housing</a></li><li><a href="https://extension.oregonstate.edu/catalog/ec-1644-living-land-backyard-chicken-coop-design" target="_blank" rel="noopener">Oregon State University Extension, Living on the Land: Backyard Chicken Coop Design (EC 1644)</a></li></ul>
+</main>
+<div id="signup-slot" class="wrap"></div>
+<footer class="site">
+  <div class="wrap">
+    <p class="foot-links"><a href="/">All guides</a> &middot; <a href="/tools/">Free tools</a> &middot; <a href="/free-printable.html">Free printable</a> &middot; <a href="https://www.etsy.com/shop/TheHomesteadSOPs" target="_blank" rel="noopener">Etsy shop</a> &middot; <a href="/privacy.html">Privacy</a></p>
+    <p>Homestead Guides is an independent resource. Reference data is drawn from university Cooperative Extension and other public sources, linked on each page. Always confirm details for your own climate and animals with your local extension office.</p>
+  </div>
+</footer>
+<script src="/signup.js" defer></script>
+</body>
+</html>

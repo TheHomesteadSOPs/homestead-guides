@@ -1,0 +1,156 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Fence Cost Calculator: Livestock Fence Cost per Acre</title>
+<meta name="description" content="Estimate the cost of a goat, sheep, cattle, horse, pig or poultry fence by acre or length: woven wire, electric, barbed, netting, panels and board.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Source+Sans+3:wght@400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/styles.css">
+<link rel="alternate" type="application/rss+xml" title="Homestead Guides" href="/feed.xml">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Homestead Guides">
+<meta property="og:title" content="Fence Cost Calculator: Livestock Fence Cost per Acre">
+<meta property="og:description" content="Estimate the cost of a goat, sheep, cattle, horse, pig or poultry fence by acre or length: woven wire, electric, barbed, netting, panels and board.">
+<meta property="og:url" content="https://thehomesteadsops.com/tools/fence-cost-calculator.html">
+<meta property="og:image" content="https://thehomesteadsops.com/images/heroes/raising-meat-goats-beginners-guide.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="canonical" href="https://thehomesteadsops.com/tools/fence-cost-calculator.html">
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16.png">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://thehomesteadsops.com/"}, {"@type": "ListItem", "position": 2, "name": "Free Tools", "item": "https://thehomesteadsops.com/tools/"}, {"@type": "ListItem", "position": 3, "name": "Fence Cost Calculator", "item": "https://thehomesteadsops.com/tools/fence-cost-calculator.html"}]}, {"@type": "WebApplication", "name": "Fence Cost Calculator", "url": "https://thehomesteadsops.com/tools/fence-cost-calculator.html", "description": "Estimate the cost of a goat, sheep, cattle, horse, pig or poultry fence by acre or length: woven wire, electric, barbed, netting, panels and board.", "applicationCategory": "UtilitiesApplication", "operatingSystem": "Any", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "USD"}}, {"@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "How much does it cost to fence one acre?", "acceptedAnswer": {"@type": "Answer", "text": "A square acre is about 835 ft around. At late-2026 US prices, materials for a woven field fence come to roughly $2,000, a 5-strand barbed fence about $1,700, and a 5-wire high-tensile electric fence about $1,400 with the energizer, before labour and tax."}}, {"@type": "Question", "name": "What is the cheapest fence for goats?", "acceptedAnswer": {"@type": "Answer", "text": "Electric options cost least per foot: high-tensile electric or electric netting. Many goat keepers still choose 4 x 4 in woven goat fence with an offset hot wire for a permanent perimeter, because goats test fences constantly."}}, {"@type": "Question", "name": "Why does a short fence cost more per foot?", "acceptedAnswer": {"@type": "Answer", "text": "Every straight run needs two strong braced ends and you usually buy wire by the roll, so a 100 ft fence carries the same end costs as a 330 ft one and leaves leftover wire."}}]}]}</script>
+</head>
+<body>
+<header class="site">
+  <div class="wrap header-inner">
+    <img src="/images/farmer-avatar.png" alt="" class="brand-avatar">
+    <div class="brand-text">
+      <a class="brand" href="/">Homestead Guides</a>
+      <div class="tagline">Free, research-backed how-tos for real backyard homesteaders</div>
+    </div>
+  </div>
+</header>
+<nav class="topnav" aria-label="Topics"><div class="wrap topnav-inner"><a href="/topics/chickens-and-poultry.html">Chickens</a><a href="/topics/goats-sheep-pigs-and-cows.html">Livestock</a><a href="/topics/beekeeping.html">Bees</a><a href="/topics/vegetable-gardening-and-orchard.html">Garden</a><a href="/topics/food-preservation-and-kitchen.html">Preserving</a><a href="/topics/building-and-off-grid.html">Building</a><a href="/tools/" class="on tools">Free Tools</a></div></nav>
+<main class="wrap">
+  <nav class="crumbs" aria-label="Breadcrumb"><a href="/">Home</a> <span class="sep">&rsaquo;</span> <a href="/tools/">Free Tools</a> <span class="sep">&rsaquo;</span> <span>Fence Cost Calculator</span></nav>
+  <h1>Fence Cost Calculator</h1>
+  <p class="dek">Enter your animal and fence size to compare materials, energizer, labour and lifespan for every suitable fence type.</p>
+
+  <form class="calc" onsubmit="return false">
+    <div class="row">
+      <label>What are you fencing in?
+        <select id="animal">
+          <option value="goats">Goats</option><option value="sheep">Sheep</option><option value="cattle">Cattle</option><option value="horses">Horses</option><option value="pigs">Pigs</option>
+          <option value="chickens">Chickens</option><option value="ducks">Ducks and geese</option><option value="turkeys">Turkeys</option><option value="rabbits">Rabbits</option><option value="dogs">Guardian dogs</option>
+        </select></label>
+      <label>How do you want to measure it?
+        <select id="mode"><option value="acres">Area in acres (square)</option><option value="rect">Width and length</option><option value="len">Total fence length</option></select></label>
+    </div>
+    <div class="row" style="margin-top:12px">
+      <label id="f-acres">Acres <span class="hint">(1 acre = 0.4 ha)</span><input id="acres" type="number" min="0" step="0.1" value="1"></label>
+      <div id="f-rect" style="display:none"><div class="row"><label>Width (ft)<input id="w" type="number" min="0" value="150"></label><label>Length (ft)<input id="l" type="number" min="0" value="300"></label></div></div>
+      <label id="f-len" style="display:none">Total fence length (ft)<input id="len" type="number" min="0" value="500"></label>
+      <div class="row"><label>12 ft gates<input id="g12" type="number" min="0" value="0"></label><label>16 ft gates<input id="g16" type="number" min="0" value="1"></label></div>
+    </div>
+  </form>
+  <div id="out" aria-live="polite"></div>
+
+  <h2>How this calculator works</h2>
+  <p>Prices come from the research behind our livestock fencing guide: typical US farm-store prices checked on October 26, 2026, mostly regular (not sale) prices at Tractor Supply, cross-checked at other stores. Each fence type is priced as complete straight runs with a braced end at each side, then corners are shared, gates are added and about 7.5% extra material is allowed for waste and mistakes.</p>
+  <ul>
+    <li><b>Short fences cost more per foot.</b> A 100 ft run still needs two braced ends and often a whole roll of wire.</li>
+    <li><b>Electric systems include an energizer kit:</b> about $345 for a solar unit for polywire or netting, $251 for a plug-in unit with ground rods for permanent fences, and about $693 for a large 15 J unit on fences over a mile.</li>
+    <li><b>Labour</b> uses Iowa State's hours per quarter mile (woven wire 42 h, barbed 39 h, high-tensile electric 18 h, polywire 2 h), scaled to your length. Other figures are our estimates.</li>
+    <li><b>Which fences show up</b> depends on the animal. We leave out fences that are unsafe or don't work, like barbed wire for horses, sheep and goats, or chicken wire as a predator barrier.</li>
+  </ul>
+  <p class="callout"><strong>Treat the result as a ballpark (about plus or minus 25%).</strong> Prices are typical US retail seen on October 26, 2026, mostly at Tractor Supply (regular, not sale, prices), cross-checked at other farm stores. They vary by region and change quickly, especially steel. In Canada expect noticeably higher prices in CAD. Use these numbers to compare options, then price your own list locally.</p>
+  <div class="cta-box">
+    <h3>Plan the whole fence, not just the price</h3>
+    <p><a href="https://www.etsy.com/listing/4604263228/" target="_blank" rel="noopener">The Ultimate Livestock Fencing Guide</a> is a 100-page printable with fence choices by animal, electric fencing explained, climate notes, 13 step-by-step installs with 3D diagrams, and worksheets for planning materials and cost.</p>
+    <a class="btn" href="https://www.etsy.com/listing/4604263228/" target="_blank" rel="noopener">See the fencing guide &rarr;</a>
+  </div>
+<script>
+const SYS = [{"k": "barbed", "name": "Barbed wire", "full": "Barbed wire, 4-5 strands", "energ": false, "hours": 3.0, "life": "about 20", "note": "Cattle only. Cheap per foot, hard and hazardous to install.", "upkeep": 0.08, "a": 291, "c": 592, "line": 131}, {"k": "woven", "name": "Woven field fence", "full": "Woven field fence, 47 in", "energ": false, "hours": 3.2, "life": "about 20", "note": "All-round stock fence. Needs strong braces and a stretcher.", "upkeep": 0.08, "a": 314, "c": 677, "line": 158}, {"k": "goat", "name": "Goat fence + hot wire", "full": "4 x 4 goat and sheep fence + 1 offset hot wire", "energ": true, "hours": 3.5, "life": "about 20 (mesh)", "note": "The standard answer for goats and sheep.", "upkeep": null, "a": 425, "c": 1039, "line": 267}, {"k": "noclimb", "name": "No-climb + top board", "full": "2 x 4 no-climb + top board (wood posts)", "energ": false, "hours": 5.0, "life": "15-20+ (estimate)", "note": "Safest wire fence for horses and foals.", "upkeep": null, "a": 726, "c": 2032, "line": 568}, {"k": "noclimbhot", "name": "No-climb + hot wire", "full": "2 x 4 no-climb + top hot wire (wood posts)", "energ": true, "hours": 4.5, "life": "15-20+ (estimate)", "note": "Same, with a hot wire instead of a board.", "upkeep": null, "a": 598, "c": 1649, "line": 457}, {"k": "ht", "name": "High-tensile electric", "full": "High-tensile electric, 5 wires", "energ": true, "hours": 1.4, "life": "about 25", "note": "Lowest cost per foot for long permanent runs.", "upkeep": 0.05, "a": 246, "c": 352, "line": 46}, {"k": "poly", "name": "Polywire, temporary", "full": "Polywire or tape, 2 strands, step-in posts", "energ": true, "hours": 0.15, "life": "4-10 (wire)", "note": "Cross fences and rotational grazing, not perimeters.", "upkeep": 0.05, "a": 30, "c": 67, "line": 16}, {"k": "net", "name": "Electric netting", "full": "Electric netting, 164 ft rolls", "energ": true, "hours": 0.1, "life": "10+ seasons (maker)", "note": "Portable poultry, sheep and goat paddocks.", "upkeep": null}, {"k": "panel", "name": "Livestock panels", "full": "Cattle or hog panels on T-posts", "energ": false, "hours": 1.5, "life": "decades (no published figure)", "note": "Rigid, quick, no stretching. Pens, pig yards, small paddocks.", "upkeep": null, "a": 357, "c": 1077, "line": 313}, {"k": "chicken", "name": "Chicken wire run", "full": "Chicken wire run on T-posts", "energ": false, "hours": 1.5, "life": "short (no published figure)", "note": "Keeps birds in. Does not keep predators out.", "upkeep": null, "a": 188, "c": 600, "line": 179}, {"k": "hcloth", "name": "Hardware cloth run", "full": "Hardware cloth run + 24 in apron", "energ": false, "hours": 5.0, "life": "long if galvanized (no published figure)", "note": "Predator-proof walls for coops and runs.", "upkeep": null, "a": 632, "c": 2029, "line": 607}, {"k": "board", "name": "3-board wood fence", "full": "3-board wood fence", "energ": false, "hours": 5.0, "life": "15-20", "note": "Classic horse fence. Looks great, needs upkeep.", "upkeep": null, "a": 712, "c": 2238, "line": 664}], MX = {"chickens": {"woven": "N", "goat": "O", "noclimb": "O", "barbed": "N", "ht": "N", "poly": "N", "net": "B", "panel": "O", "chicken": "O", "hcloth": "B", "board": "N", "noclimbhot": "O"}, "ducks": {"woven": "O", "goat": "O", "noclimb": "O", "barbed": "N", "ht": "N", "poly": "N", "net": "B", "panel": "O", "chicken": "O", "hcloth": "B", "board": "N", "noclimbhot": "O"}, "turkeys": {"woven": "O", "goat": "O", "noclimb": "O", "barbed": "N", "ht": "N", "poly": "N", "net": "B", "panel": "O", "chicken": "O", "hcloth": "O", "board": "N", "noclimbhot": "O"}, "rabbits": {"woven": "N", "goat": "N", "noclimb": "N", "barbed": "N", "ht": "N", "poly": "N", "net": "N", "panel": "N", "chicken": "N", "hcloth": "B", "board": "N", "noclimbhot": "N"}, "goats": {"woven": "O", "goat": "B", "noclimb": "O", "barbed": "N", "ht": "O", "poly": "O", "net": "O", "panel": "O", "chicken": "N", "hcloth": "X", "board": "N", "noclimbhot": "O"}, "sheep": {"woven": "O", "goat": "B", "noclimb": "O", "barbed": "N", "ht": "B", "poly": "O", "net": "B", "panel": "O", "chicken": "N", "hcloth": "X", "board": "N", "noclimbhot": "O"}, "pigs": {"woven": "O", "goat": "O", "noclimb": "X", "barbed": "X", "ht": "B", "poly": "B", "net": "O", "panel": "B", "chicken": "N", "hcloth": "X", "board": "N", "noclimbhot": "X"}, "cattle": {"woven": "O", "goat": "X", "noclimb": "X", "barbed": "B", "ht": "B", "poly": "B", "net": "N", "panel": "O", "chicken": "N", "hcloth": "X", "board": "O", "noclimbhot": "X"}, "horses": {"woven": "N", "goat": "N", "noclimb": "B", "barbed": "N", "ht": "O", "poly": "O", "net": "N", "panel": "O", "chicken": "N", "hcloth": "X", "board": "B", "noclimbhot": "B"}, "dogs": {"woven": "O", "goat": "B", "noclimb": "O", "barbed": "N", "ht": "O", "poly": "N", "net": "O", "panel": "X", "chicken": "N", "hcloth": "X", "board": "N", "noclimbhot": "O"}};
+const $ = id => document.getElementById(id);
+const fmt = n => '$' + Math.round(n).toLocaleString('en-US');
+function runCost(s, L) {            // one straight run with braced ends, materials
+  if (L <= 330) return Math.max(s.a + (s.c - s.a) * (L - 100) / 230, s.a * 0.4);
+  return s.c + (L - 330) * s.line / 100;
+}
+function perimeter() {
+  const mode = $('mode').value;
+  if (mode === 'acres') { const a = parseFloat($('acres').value) || 0; return {P: 4 * Math.sqrt(a * 43560), sides: 4}; }
+  if (mode === 'rect') { const w = parseFloat($('w').value) || 0, l = parseFloat($('l').value) || 0; return {P: 2 * (w + l), sides: 4, w, l}; }
+  return {P: parseFloat($('len').value) || 0, sides: 1};
+}
+function calc() {
+  const animal = $('animal').value, g12 = parseInt($('g12').value) || 0, g16 = parseInt($('g16').value) || 0;
+  const m = $('mode').value;
+  $('f-acres').style.display = m === 'acres' ? '' : 'none';
+  $('f-rect').style.display = m === 'rect' ? '' : 'none';
+  $('f-len').style.display = m === 'len' ? '' : 'none';
+  const {P, sides, w, l} = perimeter();
+  if (!(P > 0)) { $('out').innerHTML = '<p>Enter your fence size above.</p>'; return; }
+  const gates = g12 * 150 + g16 * 210, gateFt = g12 * 12 + g16 * 16;
+  const L = Math.max(P - gateFt, 0);
+  let sideLens = sides === 4 ? (m === 'rect' ? [w, l, w, l] : [L / 4, L / 4, L / 4, L / 4]) : [L];
+  if (m === 'rect') { const k = L / (P || 1); sideLens = sideLens.map(x => x * k); }
+  const energ = L <= 5280 ? 251 : 693;
+  const rows = [];
+  for (const s of SYS) {
+    const fit = MX[animal] ? MX[animal][s.k] : 'O';
+    if (fit === 'N' || fit === 'X') continue;
+    let mat, energy = 0;
+    if (s.k === 'net') {
+      const rolls = Math.ceil(L / 164); mat = rolls * 140; energy = 345;
+      s._extra = rolls + ' roll' + (rolls > 1 ? 's' : '') + ' of 164 ft';
+    } else {
+      mat = sideLens.reduce((t, x) => t + runCost(s, x), 0);
+      if (sides === 4) mat *= 0.88;        // corners shared between runs
+      if (s.energ) energy = (s.k === 'poly') ? 345 : energ;
+      s._extra = '';
+    }
+    mat *= 1.075;                           // 5-10% extra for waste
+    const total = mat + energy + (s.k === 'poly' || s.k === 'net' ? 0 : gates);
+    rows.push({s, fit, mat, energy, total, hours: s.hours * L / 100});
+  }
+  rows.sort((a, b) => (a.fit === 'B' ? 0 : 1) - (b.fit === 'B' ? 0 : 1) || a.total - b.total);
+  const animalName = $('animal').selectedOptions[0].text.toLowerCase();
+  let html = '<div class="result"><div>Fence length: <b>' + Math.round(P).toLocaleString('en-US') + ' ft</b> (' + (P * 0.3048).toFixed(0) + ' m)' + (gateFt ? ', including ' + gateFt + ' ft of gates' : '') + '</div>';
+  if (rows.length) {
+    const best = rows[0];
+    html += '<p class="big">' + best.s.name + ': about ' + fmt(best.total) + '</p><p>Our first pick for ' + animalName + ' at this size, materials only. Labour about ' + Math.max(1, Math.round(best.hours)) + ' hours.</p>';
+  }
+  html += '</div><div class="table-scroll"><table><thead><tr><th>Fence type</th><th>Fit</th><th class="num">Materials</th><th class="num">Energizer</th><th class="num">Estimated total</th><th class="num">Labour</th><th>Lifespan (years)</th></tr></thead><tbody>';
+  for (const r of rows) {
+    html += '<tr' + (r.fit === 'B' ? ' class="best"' : '') + '><td>' + r.s.name + (r.s._extra ? '<br><small>' + r.s._extra + '</small>' : '') + '</td><td>' + (r.fit === 'B' ? '<b>Best pick</b>' : 'Workable') + '</td><td class="num">' + fmt(r.mat) + '</td><td class="num">' + (r.energy ? fmt(r.energy) : '-') + '</td><td class="num"><b>' + fmt(r.total) + '</b></td><td class="num">' + (r.hours < 1 ? '&lt;1 h' : Math.round(r.hours) + ' h') + '</td><td>' + r.s.life + '</td></tr>';
+  }
+  html += '</tbody></table></div><p class="hint">Totals include ' + (gates ? fmt(gates) + ' of gates, ' : '') + 'braced ends, about 7.5% extra material, and an energizer kit for electric systems. Fence types that are unsafe or ineffective for ' + animalName + ' are left out.</p>';
+  $('out').innerHTML = html;
+}
+document.querySelectorAll('.calc input, .calc select').forEach(e => e.addEventListener('input', calc));
+calc();
+</script>
+  <h2>Common questions</h2>
+  <h3>How much does it cost to fence one acre?</h3>
+  <p>A square acre is about 835 ft around. At late-2026 US prices, materials for a woven field fence come to roughly $2,000, a 5-strand barbed fence about $1,700, and a 5-wire high-tensile electric fence about $1,400 with the energizer, before labour and tax.</p>
+  <h3>What is the cheapest fence for goats?</h3>
+  <p>Electric options cost least per foot: high-tensile electric or electric netting. Many goat keepers still choose 4 x 4 in woven goat fence with an offset hot wire for a permanent perimeter, because goats test fences constantly.</p>
+  <h3>Why does a short fence cost more per foot?</h3>
+  <p>Every straight run needs two strong braced ends and you usually buy wire by the roll, so a 100 ft fence carries the same end costs as a 330 ft one and leaves leftover wire.</p>
+  <ul class="sources"><li><strong>Sources:</strong></li><li><a href="https://store.extension.iastate.edu/Product/fm1855-pdf" target="_blank" rel="noopener">Iowa State University Extension, Estimated Costs for Livestock Fencing (FM1855)</a></li><li><a href="https://www.tractorsupply.com/" target="_blank" rel="noopener">Tractor Supply Co. (prices checked October 26, 2026)</a></li></ul>
+</main>
+<div id="signup-slot" class="wrap"></div>
+<footer class="site">
+  <div class="wrap">
+    <p class="foot-links"><a href="/">All guides</a> &middot; <a href="/tools/">Free tools</a> &middot; <a href="/free-printable.html">Free printable</a> &middot; <a href="https://www.etsy.com/shop/TheHomesteadSOPs" target="_blank" rel="noopener">Etsy shop</a> &middot; <a href="/privacy.html">Privacy</a></p>
+    <p>Homestead Guides is an independent resource. Reference data is drawn from university Cooperative Extension and other public sources, linked on each page. Always confirm details for your own climate and animals with your local extension office.</p>
+  </div>
+</footer>
+<script src="/signup.js" defer></script>
+</body>
+</html>
