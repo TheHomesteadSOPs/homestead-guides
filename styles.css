@@ -375,3 +375,5 @@ tr.best td { background: #fff4e8; font-weight: 600; }
   .article-card .thumb { width: 96px; height: 64px; }
 }
 .result td.num { white-space: normal; text-align: right; }
+
+.article-card.has-thumb:not(:has(img.thumb)) { display: block; }
