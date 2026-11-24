@@ -1,3 +1,13 @@
+/* Cloudflare Web Analytics fallback: every page should carry the beacon tag
+   before </body>; this adds it to any page that is missing it. */
+(function () {
+  if (document.querySelector('script[src*="cloudflareinsights.com/beacon"]')) return;
+  var c = document.createElement("script");
+  c.defer = true;
+  c.src = "https://static.cloudflareinsights.com/beacon.min.js";
+  c.setAttribute("data-cf-beacon", '{"token": "75e7aeb0c8584f6683b40a43ce9f6621"}');
+  document.body.appendChild(c);
+})();
 /* Homestead Guides - email signup block.
    Modes (first one filled in wins):
      mlAccount + mlForm : MailerLite embedded form (current)
