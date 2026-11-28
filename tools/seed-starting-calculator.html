@@ -1,0 +1,174 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Seed Starting Calculator: When to Start Seeds Indoors</title>
+<meta name="description" content="Enter your last frost date to get seed starting, transplant and direct-sow dates for 31 vegetables and herbs, from UNH Extension timing charts.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Source+Sans+3:wght@400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/styles.css">
+<link rel="alternate" type="application/rss+xml" title="Homestead Guides" href="/feed.xml">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Homestead Guides">
+<meta property="og:title" content="Seed Starting Calculator: When to Start Seeds Indoors">
+<meta property="og:description" content="Enter your last frost date to get seed starting, transplant and direct-sow dates for 31 vegetables and herbs, from UNH Extension timing charts.">
+<meta property="og:url" content="https://thehomesteadsops.com/tools/seed-starting-calculator.html">
+<meta property="og:image" content="https://thehomesteadsops.com/images/articles/seed-starting-calculator.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://thehomesteadsops.com/images/heroes/starting-seeds-indoors-beginners-guide.jpg">
+<link rel="canonical" href="https://thehomesteadsops.com/tools/seed-starting-calculator.html">
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16.png">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://thehomesteadsops.com/"}, {"@type": "ListItem", "position": 2, "name": "Free Tools", "item": "https://thehomesteadsops.com/tools/"}, {"@type": "ListItem", "position": 3, "name": "Seed Starting Calculator", "item": "https://thehomesteadsops.com/tools/seed-starting-calculator.html"}]}, {"@type": "WebApplication", "name": "Seed Starting Calculator", "url": "https://thehomesteadsops.com/tools/seed-starting-calculator.html", "description": "Enter your last frost date to get seed starting, transplant and direct-sow dates for 31 vegetables and herbs, from UNH Extension timing charts.", "applicationCategory": "UtilitiesApplication", "operatingSystem": "Any", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "USD"}}, {"@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "When should I start tomato seeds indoors?", "acceptedAnswer": {"@type": "Answer", "text": "UNH Extension gives tomatoes 6-8 weeks indoors and sets them out 1-2 weeks after the last frost, so start them about 4-7 weeks before your last frost date. With a May 15 last frost, that is roughly March 27 to April 17."}}, {"@type": "Question", "name": "Which seeds do I start first?", "acceptedAnswer": {"@type": "Answer", "text": "Onions, leeks and celery come first (8-12 weeks indoors), then parsley, peppers and eggplant. Tomatoes and basil follow, then the cabbage family and lettuce, and cucumbers, squash and melons go last at only 3-4 weeks."}}, {"@type": "Question", "name": "Do I count back from the frost date or the planting date?", "acceptedAnswer": {"@type": "Answer", "text": "From the day the seedlings go outside. UNH says to count backwards the number of weeks the seed takes to grow from sowing. Cool crops like cabbage go out before the last frost and warm crops like peppers go out after it, so their start dates shift accordingly. This calculator does that for you."}}, {"@type": "Question", "name": "Which vegetables should not be started indoors?", "acceptedAnswer": {"@type": "Answer", "text": "Peas, radishes, turnips, beets, carrots, sweet corn, beans and parsnips are sown straight into the garden. Potatoes go in as seed potatoes and sweet potatoes as rooted slips."}}]}]}</script>
+<style>
+.sched td.when{white-space:nowrap}
+.sched tr.now td,.sched tr.soon td{background:#fbe9dc}
+.sched tr.past td{color:#9a8b76}
+.tag{display:inline-block;font-size:.75rem;font-weight:600;padding:1px 7px;border-radius:10px;margin-left:6px;vertical-align:1px}
+.tag.now{background:var(--terracotta);color:#fff}
+.tag.past{background:#e6ddcf;color:#6d5f4c}
+.sched small{display:block;color:#7a6a55;font-size:.82rem;line-height:1.3}
+.calc-actions{display:flex;gap:10px;flex-wrap:wrap;margin-top:12px}
+.calc-actions button{font:inherit;font-weight:600;padding:8px 14px;border-radius:4px;border:1.5px solid var(--terracotta);background:#fff;color:var(--terracotta-dk);cursor:pointer}
+.table-scroll{overflow-x:auto}
+@media (max-width:600px){.sched td.when{white-space:normal} .sched td,.sched th{padding:6px 6px;font-size:.9rem} .sched small{font-size:.76rem}}
+@media print{header.site,nav.topnav,nav.crumbs,form.calc,#signup-slot,footer.site,.noprint,main>*:not(h1):not(#out){display:none!important} .result{border:none;padding:0} body{background:#fff}}
+</style>
+</head>
+<body>
+<header class="site">
+  <div class="wrap header-inner">
+    <img src="/images/farmer-avatar.png" alt="" class="brand-avatar">
+    <div class="brand-text">
+      <a class="brand" href="/">Homestead Guides</a>
+      <div class="tagline">Free, research-backed how-tos for real backyard homesteaders</div>
+    </div>
+  </div>
+</header>
+<nav class="topnav" aria-label="Topics"><div class="wrap topnav-inner"><a href="/topics/chickens-and-poultry.html">Chickens</a><a href="/topics/goats-sheep-pigs-and-cows.html">Livestock</a><a href="/topics/beekeeping.html">Bees</a><a href="/topics/vegetable-gardening-and-orchard.html">Garden</a><a href="/topics/food-preservation-and-kitchen.html">Preserving</a><a href="/topics/building-and-off-grid.html">Building</a><a href="/tools/" class="on tools">Free Tools</a></div></nav>
+<main class="wrap">
+  <nav class="crumbs" aria-label="Breadcrumb"><a href="/">Home</a> <span class="sep">&rsaquo;</span> <a href="/tools/">Free Tools</a> <span class="sep">&rsaquo;</span> <span>Seed Starting Calculator</span></nav>
+  <h1>Seed Starting Calculator</h1>
+  <p class="dek">Enter your average last spring frost date and get your own calendar: when to start each crop indoors, when to set it out, and what to sow straight into the garden. Timing comes from the University of New Hampshire Extension planting chart.</p>
+
+  <form class="calc" onsubmit="return false">
+    <div class="row">
+      <label>Your average last spring frost date<input id="frost" type="date"><span class="hint">Not sure? See our <a href="/articles/frost-dates-succession-planting-beginners-guide.html">frost dates guide</a>, or ask your local extension office.</span></label>
+      <label>Show
+        <select id="show"><option value="all">Everything</option><option value="in">Indoor starts only</option><option value="di">Direct sowing only</option></select></label>
+    </div>
+    <div class="calc-actions"><button type="button" id="print">Print my schedule</button><button type="button" id="copy">Copy a link to this schedule</button></div>
+  </form>
+  <div id="out" aria-live="polite"><noscript><p>Turn on JavaScript to see your own dates. The reference tables below give the same timing in weeks.</p></noscript></div>
+
+  <h2>How the dates are worked out</h2>
+  <p>UNH Extension's rule is to count back from the day a seedling goes outside, not from the frost date itself: "count backwards the number of weeks the seed takes to grow from sowing. This will be the date you will start your seeds." Cool-season crops like cabbage and onions go out <em>before</em> the last frost, and warm-season crops like tomatoes and peppers go out <em>after</em> it, so the calculator first finds each crop's set-out window and then subtracts its weeks indoors.</p>
+  <div class="callout"><strong>A worked example.</strong> With a last frost of May 15, tomatoes go out 1-2 weeks after it (May 22 to May 29). Count back 6-8 weeks and you sow them indoors between March 27 and April 17. Peppers go out 2 weeks after the frost (May 29), so at 8-10 weeks indoors they start March 20 to April 3.</div>
+  <p>The frost date is an average, so in some years the last frost comes later. UNH's own note for central New Hampshire is that Memorial Day is a conservative estimate. Do not set out frost-tender plants before the date, and give every transplant a week or two of <a href="/articles/hardening-off-seedlings-beginners-guide.html">hardening off</a> first.</p>
+
+  <h2>Reference: crops to start indoors</h2>
+  <div class="table-scroll"><table>
+    <tr><th>Crop</th><th>Weeks from seed to transplant</th><th>Safe to set out</th><th>Best soil temp to germinate</th></tr>
+    <tr><td>Onions</td><td>8-10 weeks</td><td>4 weeks before last frost</td><td>55°F</td></tr><tr><td>Leeks</td><td>8-10 weeks</td><td>4 weeks before last frost</td><td>&ndash;</td></tr><tr><td>Celery</td><td>10-12 weeks</td><td>after last frost</td><td>&ndash;</td></tr><tr><td>Parsley</td><td>9-10 weeks</td><td>2-3 weeks before last frost</td><td>70°F</td></tr><tr><td>Peppers</td><td>8-10 weeks</td><td>2 weeks after last frost</td><td>70°F</td></tr><tr><td>Eggplant</td><td>8-10 weeks</td><td>2-3 weeks after last frost</td><td>80°F</td></tr><tr><td>Tomatoes</td><td>6-8 weeks</td><td>1-2 weeks after last frost</td><td>70°F</td></tr><tr><td>Basil</td><td>6-8 weeks</td><td>2 weeks after last frost</td><td>70°F</td></tr><tr><td>Broccoli</td><td>4-6 weeks</td><td>2-4 weeks before last frost</td><td>60°F</td></tr><tr><td>Brussels sprouts</td><td>4-6 weeks</td><td>2-4 weeks before last frost</td><td>&ndash;</td></tr><tr><td>Cabbage</td><td>4-6 weeks</td><td>4 weeks before last frost</td><td>60°F</td></tr><tr><td>Cauliflower</td><td>4-6 weeks</td><td>2 weeks before last frost</td><td>60°F</td></tr><tr><td>Kale</td><td>4-6 weeks</td><td>4 weeks before last frost</td><td>60°F</td></tr><tr><td>Kohlrabi</td><td>4-6 weeks</td><td>4 weeks before last frost</td><td>80°F</td></tr><tr><td>Lettuce</td><td>4-5 weeks</td><td>3-4 weeks before last frost</td><td>55-75°F</td></tr><tr><td>Spinach</td><td>4-6 weeks</td><td>3-6 weeks before last frost</td><td>60°F</td></tr><tr><td>Swiss chard</td><td>4-6 weeks</td><td>2 weeks before last frost</td><td>55-60°F</td></tr><tr><td>Cucumbers</td><td>3-4 weeks</td><td>1-2 weeks after last frost</td><td>70-80°F</td></tr><tr><td>Melons</td><td>3-4 weeks</td><td>2 weeks after last frost</td><td>70-75°F</td></tr><tr><td>Summer squash &amp; zucchini</td><td>3-4 weeks</td><td>2 weeks after last frost</td><td>65°F</td></tr><tr><td>Winter squash &amp; pumpkins</td><td>3-4 weeks</td><td>2 weeks after last frost</td><td>65°F</td></tr>
+  </table></div>
+  <p>Weeks and set-out timing: UNH Extension. Soil temperatures: University of Idaho Extension (Kootenai County) seed-starting plan, which agrees with UNH on most crops but gives onions 6-8 weeks indoors, peppers 6-14 weeks, and basil 1 week after the frost-free date. Other extension guides vary by a week or two as well (see our <a href="/articles/starting-seeds-indoors-beginners-guide.html">seed-starting guide</a>), so treat each range as a window.</p>
+
+  <h2>Reference: crops to sow straight into the garden</h2>
+  <div class="table-scroll"><table>
+    <tr><th>Crop</th><th>When to plant outdoors (UNH)</th><th>Best soil temp to germinate</th></tr>
+    <tr><td>Peas</td><td>as soon as the soil thaws</td><td>60°F</td></tr><tr><td>Radishes</td><td>2-4 weeks before last frost</td><td>&ndash;</td></tr><tr><td>Turnips</td><td>2-4 weeks before last frost</td><td>&ndash;</td></tr><tr><td>Potatoes (seed potatoes)</td><td>1-2 weeks before last frost</td><td>&ndash;</td></tr><tr><td>Beets</td><td>when soil warms to 45°F</td><td>55-60°F</td></tr><tr><td>Carrots</td><td>when soil warms to 60°F</td><td>&ndash;</td></tr><tr><td>Sweet corn</td><td>when soil warms to 60°F</td><td>&ndash;</td></tr><tr><td>Beans</td><td>after last frost</td><td>&ndash;</td></tr><tr><td>Parsnips</td><td>after last frost</td><td>&ndash;</td></tr><tr><td>Sweet potato slips (plants)</td><td>1-2 weeks after last frost</td><td>&ndash;</td></tr>
+  </table></div>
+  <p>Carrots and peas are "not adapted to being grown as transplants," as Utah State University Extension puts it. For the soil-temperature crops, push a soil thermometer about 4 inches deep in the morning. Want an earlier start without lights? <a href="/articles/winter-sowing-in-milk-jugs-beginners-guide.html">Winter sowing in milk jugs</a> works for many hardy crops.</p>
+
+  <div class="cta-box">
+    <h3>Keep the whole season on one sheet</h3>
+    <p>The <a href="https://www.etsy.com/listing/4620374179" target="_blank" rel="noopener">Seed Starting Chart</a> shows when to start 18 vegetables indoors on one printable page, with a fill-in week-by-week sowing calendar, a soil temperature chart and a seed starting log. Pair it with the <a href="https://www.etsy.com/listing/4627108886" target="_blank" rel="noopener">Companion Planting Chart &amp; Bed Planner</a> to plan where everything goes, or the <a href="https://www.etsy.com/listing/4622029916" target="_blank" rel="noopener">Winter Sowing Chart</a> for milk-jug starts. More in our <a href="https://www.etsy.com/shop/TheHomesteadSOPs?section_id=61627062" target="_blank" rel="noopener">Garden Guides &amp; Charts</a> shop section.</p>
+    <a class="btn" href="https://www.etsy.com/listing/4620374179" target="_blank" rel="noopener">See the Seed Starting Chart &rarr;</a>
+  </div>
+
+  <h2>Common questions</h2>
+  <h3>When should I start tomato seeds indoors?</h3>
+  <p>UNH Extension gives tomatoes 6-8 weeks indoors and sets them out 1-2 weeks after the last frost, so start them about 4-7 weeks before your last frost date. With a May 15 last frost, that is roughly March 27 to April 17.</p>
+  <h3>Which seeds do I start first?</h3>
+  <p>Onions, leeks and celery come first (8-12 weeks indoors), then parsley, peppers and eggplant. Tomatoes and basil follow, then the cabbage family and lettuce, and cucumbers, squash and melons go last at only 3-4 weeks.</p>
+  <h3>Do I count back from the frost date or the planting date?</h3>
+  <p>From the day the seedlings go outside. UNH says to count backwards the number of weeks the seed takes to grow from sowing. Cool crops like cabbage go out before the last frost and warm crops like peppers go out after it, so their start dates shift accordingly. This calculator does that for you.</p>
+  <h3>Which vegetables should not be started indoors?</h3>
+  <p>Peas, radishes, turnips, beets, carrots, sweet corn, beans and parsnips are sown straight into the garden. Potatoes go in as seed potatoes and sweet potatoes as rooted slips.</p>
+  <p>Read the full guide: <a href="/articles/starting-seeds-indoors-beginners-guide.html">Starting Seeds Indoors: Timing, Grow Lights, Watering &amp; Preventing Damping-Off</a>.</p>
+  <ul class="sources"><li><strong>Sources:</strong></li><li><a href="https://extension.unh.edu/resource/growing-vegetables-when-plant-your-vegetable-garden-fact-sheet" target="_blank" rel="noopener">University of New Hampshire Extension, Growing Vegetables: When to Plant Your Vegetable Garden (fact sheet)</a></li><li><a href="https://www.uidaho.edu/-/media/uidaho-responsive/files/extension/county/kootenai/gardening/vegetable-and-seed-planting-timetable-and-seed-starting-plan.pdf" target="_blank" rel="noopener">University of Idaho Extension, Kootenai County, Vegetable &amp; Flower Planting Timetable and Seed Starting Plan</a></li><li><a href="https://extension.usu.edu/yardandgarden/research/starting-vegetable-seeds-indoors-planning" target="_blank" rel="noopener">Utah State University Extension, Starting Vegetable Seeds Indoors: I. Planning (Crump, Beddes, Caron &amp; Oliveira, 2025)</a></li></ul>
+</main>
+<div id="signup-slot" class="wrap"></div>
+<footer class="site">
+  <div class="wrap">
+    <p class="foot-links"><a href="/">All guides</a> &middot; <a href="/tools/">Free tools</a> &middot; <a href="/free-printable.html">Free printable</a> &middot; <a href="https://www.etsy.com/shop/TheHomesteadSOPs" target="_blank" rel="noopener">Etsy shop</a> &middot; <a href="/privacy.html">Privacy</a></p>
+    <p>Homestead Guides is an independent resource. Reference data is drawn from university Cooperative Extension and other public sources, linked on each page. Always confirm details for your own climate and animals with your local extension office.</p>
+  </div>
+</footer>
+<script>
+const D = {"in": [{"n": "Onions", "w": [8, 10], "o": [-4, -4], "t": "4 weeks before last frost", "s": "55°F", "x": "U of Idaho: 6-8 weeks indoors."}, {"n": "Leeks", "w": [8, 10], "o": [-4, -4], "t": "4 weeks before last frost", "s": "", "x": ""}, {"n": "Celery", "w": [10, 12], "o": [0, 0], "t": "after last frost", "s": "", "x": ""}, {"n": "Parsley", "w": [9, 10], "o": [-3, -2], "t": "2-3 weeks before last frost", "s": "70°F", "x": ""}, {"n": "Peppers", "w": [8, 10], "o": [2, 2], "t": "2 weeks after last frost", "s": "70°F", "x": "U of Idaho: 6-14 weeks indoors."}, {"n": "Eggplant", "w": [8, 10], "o": [2, 3], "t": "2-3 weeks after last frost", "s": "80°F", "x": ""}, {"n": "Tomatoes", "w": [6, 8], "o": [1, 2], "t": "1-2 weeks after last frost", "s": "70°F", "x": ""}, {"n": "Basil", "w": [6, 8], "o": [2, 2], "t": "2 weeks after last frost", "s": "70°F", "x": "U of Idaho: set out 1 week after."}, {"n": "Broccoli", "w": [4, 6], "o": [-4, -2], "t": "2-4 weeks before last frost", "s": "60°F", "x": ""}, {"n": "Brussels sprouts", "w": [4, 6], "o": [-4, -2], "t": "2-4 weeks before last frost", "s": "", "x": ""}, {"n": "Cabbage", "w": [4, 6], "o": [-4, -4], "t": "4 weeks before last frost", "s": "60°F", "x": ""}, {"n": "Cauliflower", "w": [4, 6], "o": [-2, -2], "t": "2 weeks before last frost", "s": "60°F", "x": ""}, {"n": "Kale", "w": [4, 6], "o": [-4, -4], "t": "4 weeks before last frost", "s": "60°F", "x": ""}, {"n": "Kohlrabi", "w": [4, 6], "o": [-4, -4], "t": "4 weeks before last frost", "s": "80°F", "x": ""}, {"n": "Lettuce", "w": [4, 5], "o": [-4, -3], "t": "3-4 weeks before last frost", "s": "55-75°F", "x": ""}, {"n": "Spinach", "w": [4, 6], "o": [-6, -3], "t": "3-6 weeks before last frost", "s": "60°F", "x": ""}, {"n": "Swiss chard", "w": [4, 6], "o": [-2, -2], "t": "2 weeks before last frost", "s": "55-60°F", "x": "Or sow outdoors 4 weeks before last frost."}, {"n": "Cucumbers", "w": [3, 4], "o": [1, 2], "t": "1-2 weeks after last frost", "s": "70-80°F", "x": "Or sow outdoors once soil reaches 70°F."}, {"n": "Melons", "w": [3, 4], "o": [2, 2], "t": "2 weeks after last frost", "s": "70-75°F", "x": ""}, {"n": "Summer squash & zucchini", "w": [3, 4], "o": [2, 2], "t": "2 weeks after last frost", "s": "65°F", "x": "Or sow outdoors once soil reaches 70°F."}, {"n": "Winter squash & pumpkins", "w": [3, 4], "o": [2, 2], "t": "2 weeks after last frost", "s": "65°F", "x": "Or sow outdoors once soil reaches 70°F."}], "di": [{"n": "Peas", "o": null, "t": "as soon as the soil thaws", "s": "60°F", "x": ""}, {"n": "Radishes", "o": [-4, -2], "t": "2-4 weeks before last frost", "s": "", "x": ""}, {"n": "Turnips", "o": [-4, -2], "t": "2-4 weeks before last frost", "s": "", "x": ""}, {"n": "Potatoes (seed potatoes)", "o": [-2, -1], "t": "1-2 weeks before last frost", "s": "", "x": ""}, {"n": "Beets", "o": null, "t": "when soil warms to 45°F", "s": "55-60°F", "x": ""}, {"n": "Carrots", "o": null, "t": "when soil warms to 60°F", "s": "", "x": ""}, {"n": "Sweet corn", "o": null, "t": "when soil warms to 60°F", "s": "", "x": ""}, {"n": "Beans", "o": [0, 0], "t": "after last frost", "s": "", "x": ""}, {"n": "Parsnips", "o": [0, 0], "t": "after last frost", "s": "", "x": ""}, {"n": "Sweet potato slips (plants)", "o": [1, 2], "t": "1-2 weeks after last frost", "s": "", "x": "Plant rooted slips, not seed."}]};
+const $ = id => document.getElementById(id);
+const MS = 864e5, MON = ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
+function parse(v) { const m = /^(\d{4})-(\d{2})-(\d{2})$/.exec(v || ''); return m ? new Date(Date.UTC(+m[1], +m[2] - 1, +m[3])) : null; }
+function iso(d) { return d.toISOString().slice(0, 10); }
+function add(d, w) { return new Date(d.getTime() + w * 7 * MS); }
+function fmt(d) { return MON[d.getUTCMonth()] + ' ' + d.getUTCDate(); }
+function rng(a, b) { return a.getTime() === b.getTime() ? fmt(a) : fmt(a) + ' &ndash; ' + fmt(b); }
+function esc(s) { return s.replace(/&/g, '&amp;').replace(/</g, '&lt;'); }
+function today() { const t = new Date(); return new Date(Date.UTC(t.getFullYear(), t.getMonth(), t.getDate())); }
+function defaultFrost() { const t = today(); let y = t.getUTCFullYear(); if (t > new Date(Date.UTC(y, 4, 15))) y++; return y + '-05-15'; }
+function status(a, b, t) { if (t > b) return 'past'; if (t >= a) return 'now'; if (t >= add(a, -1)) return 'soon'; return ''; }
+function badge(s) { return s === 'now' ? '<span class="tag now">sow now</span>' : s === 'soon' ? '<span class="tag now">next week</span>' : s === 'past' ? '<span class="tag past">window passed</span>' : ''; }
+function calc() {
+  const f = parse($('frost').value), show = $('show').value, t = today();
+  if (!f) { $('out').innerHTML = '<p>Pick your average last spring frost date.</p>'; return; }
+  let html = '<div class="result">';
+  const rows = D.in.map(c => {
+    const o1 = add(f, c.o[0]), o2 = add(f, c.o[1]);
+    const s1 = add(o1, -c.w[1]), s2 = add(o2, -c.w[0]);
+    return {c, o1, o2, s1, s2, st: status(s1, s2, t)};
+  }).sort((a, b) => a.s1 - b.s1 || a.s2 - b.s2);
+  const first = rows[0], firstNames = rows.filter(r => r.s1.getTime() === first.s1.getTime()).map(r => r.c.n.toLowerCase());
+  const fn = firstNames.join(' and ');
+  html += '<p class="big">First seeds: ' + fmt(first.s1) + '</p><p>' + esc(fn.charAt(0).toUpperCase() + fn.slice(1)) + ' start first, for a last frost of ' + fmt(f) + ', ' + f.getUTCFullYear() + '.</p>';
+  if (show !== 'di') {
+    html += '<h3>Start indoors</h3><div class="table-scroll"><table class="sched"><tr><th>Crop</th><th>Sow indoors</th><th>Set out</th></tr>';
+    rows.forEach(r => {
+      html += '<tr class="' + r.st + '"><td>' + esc(r.c.n) + badge(r.st) + (r.c.x ? '<small>' + esc(r.c.x) + '</small>' : '') + '</td><td class="when">' + rng(r.s1, r.s2) + '<small>' + (r.c.w[0] === r.c.w[1] ? r.c.w[0] : r.c.w[0] + '-' + r.c.w[1]) + ' weeks indoors</small></td><td class="when">' + (r.c.t === 'after last frost' ? 'from ' + fmt(r.o1) : rng(r.o1, r.o2)) + '<small>' + esc(r.c.t) + '</small></td></tr>';
+    });
+    html += '</table></div>';
+  }
+  if (show !== 'in') {
+    html += '<h3>Sow straight into the garden</h3><div class="table-scroll"><table class="sched"><tr><th>Crop</th><th>Plant outdoors</th></tr>';
+    D.di.map(c => {
+      if (!c.o) return {c, txt: esc(c.t.charAt(0).toUpperCase() + c.t.slice(1)), k: 9e15, st: ''};
+      const a = add(f, c.o[0]), b = add(f, c.o[1]);
+      const st = t > b && c.o[0] !== c.o[1] ? 'past' : '';
+      return {c, txt: (c.t === 'after last frost' ? 'from ' + fmt(a) : rng(a, b)) + '<small>' + esc(c.t) + '</small>', k: a.getTime(), st};
+    }).sort((a, b) => a.k - b.k).forEach(r => {
+      html += '<tr class="' + r.st + '"><td>' + esc(r.c.n) + (r.c.x ? '<small>' + esc(r.c.x) + '</small>' : '') + '</td><td class="when">' + r.txt + '</td></tr>';
+    });
+    html += '</table></div>';
+  }
+  html += '<p class="noprint" style="font-size:.9rem">Timing: UNH Extension. Ranges are windows, not deadlines; nudge them a week later in a cold spring.</p></div>';
+  $('out').innerHTML = html;
+  try { history.replaceState(null, '', '?frost=' + iso(f)); } catch (e) {}
+}
+(function init() {
+  let v = null;
+  try { v = new URLSearchParams(location.search).get('frost'); } catch (e) {}
+  $('frost').value = parse(v) ? v : defaultFrost();
+  $('frost').addEventListener('input', calc); $('show').addEventListener('input', calc);
+  $('print').addEventListener('click', () => window.print());
+  $('copy').addEventListener('click', () => { const u = location.href; try { navigator.clipboard.writeText(u).then(() => { $('copy').textContent = 'Link copied'; }, () => prompt('Copy this link:', u)); } catch (e) { prompt('Copy this link:', u); } });
+  calc();
+})();
+</script>
+<script src="/signup.js" defer></script>
+<!-- Cloudflare Web Analytics --><script type='module' src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "75e7aeb0c8584f6683b40a43ce9f6621"}'></script><!-- End Cloudflare Web Analytics -->
+</body>
+</html>
